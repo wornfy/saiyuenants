@@ -220,7 +220,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
 <script id="PopupBuilder.js-js-before">
 var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_1\/close.png","2":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_2\/close.png","3":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_3\/close.png","5":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_5\/close.png","6":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_6\/close.png"},"homePageUrl":"https:\/\/wornfy.github.io\/saiyuenants\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":"0"};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
-var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"b0b44dabcb"};
+var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"22461bc3bb"};
 </script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.1.12" id="PopupBuilder.js-js"></script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/themes/twentytwenty%20custom/assets/js/index.js?ver=2.0" id="twentytwenty-js-js" async></script>
@@ -241,6 +241,9 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-adm
 <link rel="icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-180x180.png">
 <meta name="msapplication-TileImage" content="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-270x270.png">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/baseline/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/default/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/black/css/style.css">
 		<style id="wp-custom-css">/*overall font, color & button setup*/
 
 body {
@@ -285,7 +288,7 @@ body:not(.overlay-header) .primary-menu ul {
 }
 
 .color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus)::first-letter, .wp-block-button.is-style-outline, a {
-  color: #de2722;
+  color: #1d71b8;
 }
 
 .wp-block-button .wp-block-button__link {
@@ -297,6 +300,10 @@ body:not(.overlay-header) .primary-menu ul {
 	background-color: white;
 	color: #032f3c;
 	text-decoration-line: none;
+}
+
+.broken_link, a.broken_link {
+	text-decoration: inherit !important;
 }
 
 
@@ -376,6 +383,8 @@ li.pll-parent-menu-item a {
 
 .entry-content #pcp_wrapper-780, .entry-content #pcp_wrapper-3408 {
 	max-width: unset;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 #pcp_wrapper-780 .swiper-slide h3.sp-pcp-title {
@@ -421,9 +430,15 @@ li.pll-parent-menu-item a {
 
 /*homepage layout*/
 
-.entry-content .home-cover {
+.entry-content .home-cover, .entry-content .home-cover-top {
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+@media (min-width: 480px) {
+	.entry-content .home-cover-top {
+		min-height: 650px;
+	}
 }
 
 .entry-content .home-cover p {
@@ -496,7 +511,7 @@ li.pll-parent-menu-item a {
 
 @media (min-width: 480px) {
 	.entry-content .intro-group {
-		max-width: 70vw !important;
+		max-width: 75vw !important;
 	}
 }
 
@@ -504,10 +519,11 @@ li.pll-parent-menu-item a {
 	display: grid;
 	width: 50%;
 	flex-basis: initial !important;
-	max-width: 50rem;
+	max-width: 55rem;
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+	border: solid 1px;
 }
 
 .entry-content .intro-box .wp-block-group.intro-box-subhead {
@@ -607,6 +623,25 @@ video {
 	margin-right: auto;
 }
 
+.entry-content .youtube-embed-group-outer {
+	max-width: unset !important;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	background-color: #e7e6e6;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+
+.entry-content .youtube-embed-group-inner {
+	max-width: 80rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.youtube-embed-heading {
+	font-family: Abel, Helvetica, Arial, Verdana, Helvetica, sans-serif;
+}
+
 
 
 
@@ -698,6 +733,10 @@ video {
 	font-family: NonBreakingSpaceOverride, "Hoefler Text", "Noto Serif", Garamond, "Times New Roman", serif;
 }
 
+.sg-popup-builder-content .color-accent, .sg-popup-builder-content .color-accent-hover:hover, .sg-popup-builder-content .color-accent-hover:focus, :root .sg-popup-builder-content .has-accent-color, .sg-popup-builder-content .has-drop-cap:not(:focus)::first-letter, .sg-popup-builder-content .wp-block-button.is-style-outline, a {
+  color: #de2722;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
 	.sgpb-content {
 		scroll-behavior: smooth;
@@ -714,12 +753,16 @@ video {
 	color: #6d6d6d;
 	background-color: white;
 	position: absolute;
-	z-index: 999920;
+	z-index: 8000;
 	float: right;
 	bottom: 10px;
 	right: 35px;
 	padding: 5px;
 	margin: 0px;
+}
+
+.sgpb-floating-button {
+	z-index: 8000 !important;
 }
 
 @media ( max-width: 479px ) {
@@ -945,11 +988,11 @@ a.to-the-top {
 	<li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1828 current_page_item menu-item-1833"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-ant/" aria-current="page">何為「螞蟻」？</a></li>
 	<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/ants-and-where-to-find-them/">螞蟻與它們的產地</a></li>
 	<li id="menu-item-2771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2771"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-many-many-roles-of-ants/">萬能的螞蟻</a></li>
-	<li id="menu-item-2772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-illegal-immigrants-in-ants/">螞蟻中的偷渡客</a></li>
+	<li id="menu-item-2772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-undesired-ant-introductions/">螞蟻中的偷渡客</a></li>
 	<li id="menu-item-2773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2773"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/how-to-collect-ants/">如何採集螞蟻？</a></li>
 </ul>
 </li>
-<li id="menu-item-2456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="https://wornfy.github.io/saiyuenants/zh/genus-overview/">螞蟻一覽</a></li>
+<li id="menu-item-2456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="https://wornfy.github.io/saiyuenants/zh/ant-overview/">螞蟻一覽</a></li>
 <li id="menu-item-1834" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1834">
 <a href="#pll_switcher"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAS1BMVEXqAADjAADZAAD2e3v0dXXzbGzyYWHxWFjyUlLuSkrQAAD5jY76m5zsPz/qNTXnKir56en6w8PmGxvKAAD5z9D6qqvjDw/32dnCAADqlhvuAAAAYElEQVR4AQXBUU6DUBRAwTm8SwqJ+9+m8cva0uBMgBBkkUiqYSWrkpeNxL6/76w5R/L1WZ9jXoONqvs5fWeyrGWux9i3Na5ji3Ftfv/uIZtG+8/78TxA7Skj4qxwcNrBPxiAEpMq30QZAAAAAElFTkSuQmCC" alt="中文 (香港)" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">中文 (香港)</span></a><span class="icon"></span>
 <ul class="sub-menu">
@@ -1017,7 +1060,7 @@ a.to-the-top {
 <!-- .ancestor-wrapper -->
 </li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772">
-<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-illegal-immigrants-in-ants/">螞蟻中的偷渡客</a></div>
+<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-undesired-ant-introductions/">螞蟻中的偷渡客</a></div>
 <!-- .ancestor-wrapper -->
 </li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2773">
@@ -1027,7 +1070,7 @@ a.to-the-top {
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456">
-<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/genus-overview/">螞蟻一覽</a></div>
+<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/ant-overview/">螞蟻一覽</a></div>
 <!-- .ancestor-wrapper -->
 </li>
 <li class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1834">
@@ -1135,7 +1178,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-2 wp-block-gallery-1 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="28838867" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3165" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" alt="Ant closeup 2" class="wp-image-3165" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1715873738" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3165" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" alt="Ant closeup 2" class="wp-image-3165" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 <figcaption class="blocks-gallery-caption">竹樹上的巨山蟻屬／弓背蟻屬（<em>Camponotus</em> sp.）工蟻，攝於西園。</figcaption></figure>
 
 
@@ -1173,7 +1216,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-4 wp-block-gallery-3 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2051574843" data-slb-internal="0"><img data-id="3195" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" alt="Introduction-caste" class="wp-image-3195"></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1141193913" data-slb-internal="0"><img data-id="3195" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" alt="Introduction-caste" class="wp-image-3195"></a></figure>
 <figcaption class="blocks-gallery-caption">同一螞蟻品種（密毛瘤顎家蟻／密毛瘤顎蟻 <em>Strumigenys hirsuta</em>）的脫翅蟻后（dealate queen，上圖）和工蟻（下圖）比較，放大倍率相同<em>（並非於西園採集）</em>。蟻后體型相對較大，複眼明顯更大，中軀較粗壯（有飛行用的肌肉）。</figcaption></figure>
 
 
@@ -1191,7 +1234,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-6 wp-block-gallery-5 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1069492328" data-slb-internal="0"><img data-id="3218" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" alt="Introduction-subcaste" class="wp-image-3218"></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="25111926" data-slb-internal="0"><img data-id="3218" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" alt="Introduction-subcaste" class="wp-image-3218"></a></figure>
 <figcaption class="blocks-gallery-caption">同一螞蟻品種（上海大頭家蟻／上海大頭蟻 <em>Pheidole zoceana</em>）的大工蟻（上圖）和小工蟻（下圖）比較，放大倍率相同。大工蟻體型較大，頭部更強壯。<br><br>要注意大工蟻和小工蟻的體型差異視乎螞蟻品種，並不一定如此極端。</figcaption></figure>
 
 
@@ -1385,6 +1428,7 @@ a.to-the-top {
 							2022							<a href="https://wornfy.github.io/saiyuenants/zh/home/">西園螞蟻</a>
 						</p>
 <!-- .footer-copyright -->
+
 						<p class="privacy-policy"><a class="privacy-policy-link" href="https://wornfy.github.io/saiyuenants/zh/terms-and-conditions/">使用條款及細則</a></p>
 
 						
@@ -2025,7 +2069,7 @@ var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/wornfy.github.io\/saiyuenants
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
 	<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":false,"slideshow_autostart":false,"slideshow_duration":"6","group_loop":false,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_black","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"%current% \/ %total%"}}); }
-if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"28838867":{"id":3165,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Ant-closeup-2.jpg"},"2051574843":{"id":3423,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-caste.jpg"},"1069492328":{"id":3426,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-subcaste.jpg"}});} }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"1715873738":{"id":3165,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Ant-closeup-2.jpg"},"1141193913":{"id":3423,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-caste.jpg"},"25111926":{"id":3426,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-subcaste.jpg"}});} }
 /* THM */
 if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"Baseline","parent":"","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"Default (Light)","parent":"slb_baseline","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_black',{"name":"Default (Dark)","parent":"slb_default","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/black\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
 <script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>

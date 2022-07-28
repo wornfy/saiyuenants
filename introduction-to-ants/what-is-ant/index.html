@@ -64,7 +64,7 @@
 					"@id": "https://wornfy.github.io/saiyuenants/#website",
 					"url": "https://wornfy.github.io/saiyuenants/",
 					"name": "The Ants of Saiyuen",
-					"description": "learn about ants&#039; ecology &amp; biodiversity",
+					"description": "Learn about ants&#039; ecology &amp; biodiversity",
 					"publisher": {
 						"@id": "https://wornfy.github.io/saiyuenants/#organization"
 					},
@@ -1217,7 +1217,7 @@
 		};
 		var SGPB_JS_PARAMS = {
 			"ajaxUrl": "https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php",
-			"nonce": "b0b44dabcb"
+			"nonce": "22461bc3bb"
 		};
 	</script>
 	<script src="https://wornfy.github.io/saiyuenants/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.1.12" id="PopupBuilder.js-js"></script>
@@ -1248,6 +1248,9 @@
 	<link rel="icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-192x192.png" sizes="192x192">
 	<link rel="apple-touch-icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-180x180.png">
 	<meta name="msapplication-TileImage" content="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-270x270.png">
+	<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/baseline/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/default/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/black/css/style.css">
 	<style id="wp-custom-css">
 		/*overall font, color & button setup*/
 
@@ -1334,7 +1337,7 @@
 		.has-drop-cap:not(:focus)::first-letter,
 		.wp-block-button.is-style-outline,
 		a {
-			color: #de2722;
+			color: #1d71b8;
 		}
 
 		.wp-block-button .wp-block-button__link {
@@ -1346,6 +1349,11 @@
 			background-color: white;
 			color: #032f3c;
 			text-decoration-line: none;
+		}
+
+		.broken_link,
+		a.broken_link {
+			text-decoration: inherit !important;
 		}
 
 
@@ -1435,6 +1443,8 @@
 		.entry-content #pcp_wrapper-780,
 		.entry-content #pcp_wrapper-3408 {
 			max-width: unset;
+			margin-top: 40px;
+			margin-bottom: 20px;
 		}
 
 		#pcp_wrapper-780 .swiper-slide h3.sp-pcp-title {
@@ -1494,9 +1504,16 @@
 
 		/*homepage layout*/
 
-		.entry-content .home-cover {
+		.entry-content .home-cover,
+		.entry-content .home-cover-top {
 			margin-top: 0px;
 			margin-bottom: 0px;
+		}
+
+		@media (min-width: 480px) {
+			.entry-content .home-cover-top {
+				min-height: 650px;
+			}
 		}
 
 		.entry-content .home-cover p {
@@ -1569,7 +1586,7 @@
 
 		@media (min-width: 480px) {
 			.entry-content .intro-group {
-				max-width: 70vw !important;
+				max-width: 75vw !important;
 			}
 		}
 
@@ -1577,10 +1594,11 @@
 			display: grid;
 			width: 50%;
 			flex-basis: initial !important;
-			max-width: 50rem;
+			max-width: 55rem;
 			align-items: center;
 			margin-left: auto;
 			margin-right: auto;
+			border: solid 1px;
 		}
 
 		.entry-content .intro-box .wp-block-group.intro-box-subhead {
@@ -1686,6 +1704,25 @@
 			margin-right: auto;
 		}
 
+		.entry-content .youtube-embed-group-outer {
+			max-width: unset !important;
+			margin-top: 20px;
+			margin-bottom: 0px;
+			background-color: #e7e6e6;
+			border-top: solid 1px;
+			border-bottom: solid 1px;
+		}
+
+		.entry-content .youtube-embed-group-inner {
+			max-width: 80rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p.youtube-embed-heading {
+			font-family: Abel, Helvetica, Arial, Verdana, Helvetica, sans-serif;
+		}
+
 
 
 
@@ -1777,6 +1814,16 @@
 			font-family: NonBreakingSpaceOverride, "Hoefler Text", "Noto Serif", Garamond, "Times New Roman", serif;
 		}
 
+		.sg-popup-builder-content .color-accent,
+		.sg-popup-builder-content .color-accent-hover:hover,
+		.sg-popup-builder-content .color-accent-hover:focus,
+		:root .sg-popup-builder-content .has-accent-color,
+		.sg-popup-builder-content .has-drop-cap:not(:focus)::first-letter,
+		.sg-popup-builder-content .wp-block-button.is-style-outline,
+		a {
+			color: #de2722;
+		}
+
 		@media screen and (prefers-reduced-motion: no-preference) {
 			.sgpb-content {
 				scroll-behavior: smooth;
@@ -1793,12 +1840,16 @@
 			color: #6d6d6d;
 			background-color: white;
 			position: absolute;
-			z-index: 999920;
+			z-index: 8000;
 			float: right;
 			bottom: 10px;
 			right: 35px;
 			padding: 5px;
 			margin: 0px;
+		}
+
+		.sgpb-floating-button {
+			z-index: 8000 !important;
 		}
 
 		@media (max-width: 479px) {
@@ -2106,7 +2157,7 @@
 				<div class="header-titles">
 
 					<div class="site-title faux-heading"><a href="https://wornfy.github.io/saiyuenants/">The Ants of Saiyuen</a></div>
-					<div class="site-description">learn about ants&#039; ecology &amp; biodiversity</div>
+					<div class="site-description">Learn about ants&#039; ecology &amp; biodiversity</div>
 					<!-- .site-description -->
 				</div>
 				<!-- .header-titles -->
@@ -2146,12 +2197,12 @@
 								<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a
 										href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-many-many-roles-of-ants/">The many, many roles of ants</a></li>
 								<li id="menu-item-1043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043"><a
-										href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-illegal-immigrants-in-ants/">The illegal immigrants in ants</a></li>
+										href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-undesired-ant-introductions/">The undesired ant introductions</a></li>
 								<li id="menu-item-1044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1044"><a
 										href="https://wornfy.github.io/saiyuenants/introduction-to-ants/how-to-collect-ants/">How to collect ants?</a></li>
 							</ul>
 						</li>
-						<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="https://wornfy.github.io/saiyuenants/genus-overview/">Genus Overview</a></li>
+						<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="https://wornfy.github.io/saiyuenants/ant-overview/">Ant Overview</a></li>
 						<li id="menu-item-1838" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1838">
 							<a href="#pll_switcher"><img
 									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII="
@@ -2237,7 +2288,8 @@
 										<!-- .ancestor-wrapper -->
 									</li>
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043">
-										<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-illegal-immigrants-in-ants/">The illegal immigrants in ants</a></div>
+										<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-undesired-ant-introductions/">The undesired ant introductions</a>
+										</div>
 										<!-- .ancestor-wrapper -->
 									</li>
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1044">
@@ -2247,7 +2299,7 @@
 								</ul>
 							</li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049">
-								<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/genus-overview/">Genus Overview</a></div>
+								<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/ant-overview/">Ant Overview</a></div>
 								<!-- .ancestor-wrapper -->
 							</li>
 							<li class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1838">
@@ -2380,7 +2432,7 @@
 
 					<figure class="wp-container-2 wp-block-gallery-1 wp-block-gallery has-nested-images columns-default is-cropped">
 						<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" target="_blank" rel="noopener" data-slb-active="1"
-								data-slb-asset="329958913" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3165"
+								data-slb-asset="550468440" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3165"
 									src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" alt="Ant closeup 2" class="wp-image-3165"
 									srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-1536x1024.jpg 1536w"
 									sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
@@ -2442,7 +2494,7 @@
 
 					<figure class="wp-container-4 wp-block-gallery-3 wp-block-gallery has-nested-images columns-default is-cropped">
 						<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" target="_blank" rel="noopener" data-slb-active="1"
-								data-slb-asset="531279328" data-slb-internal="0"><img loading="lazy" width="1750" height="1998" data-id="3423"
+								data-slb-asset="627077347" data-slb-internal="0"><img loading="lazy" width="1750" height="1998" data-id="3423"
 									src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" alt="Introduction caste" class="wp-image-3423"
 									srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg 1750w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste-673x768.jpg 673w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste-1345x1536.jpg 1345w"
 									sizes="(max-width: 1750px) 100vw, 1750px"></a></figure>
@@ -2475,7 +2527,7 @@
 
 					<figure class="wp-container-6 wp-block-gallery-5 wp-block-gallery has-nested-images columns-default is-cropped">
 						<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" target="_blank" rel="noopener" data-slb-active="1"
-								data-slb-asset="1650516090" data-slb-internal="0"><img loading="lazy" width="1727" height="1689" data-id="3426"
+								data-slb-asset="2077786730" data-slb-internal="0"><img loading="lazy" width="1727" height="1689" data-id="3426"
 									src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" alt="Introduction subcaste" class="wp-image-3426"
 									srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg 1727w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste-768x751.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste-1536x1502.jpg 1536w"
 									sizes="(max-width: 1727px) 100vw, 1727px"></a></figure>
@@ -3754,7 +3806,7 @@
 					if (!!window.SLB && SLB.has_child('View.assets')) {
 						{
 							$.extend(SLB.View.assets, {
-								"329958913": {
+								"550468440": {
 									"id": 3165,
 									"type": "image",
 									"internal": true,
@@ -3763,17 +3815,23 @@
 									"caption": "",
 									"description": "Ant closeup 2"
 								},
-								"531279328": {
-									"id": null,
+								"627077347": {
+									"id": 3423,
 									"type": "image",
 									"internal": true,
-									"source": "https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-caste.jpg"
+									"source": "https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-caste.jpg",
+									"title": "Introduction caste",
+									"caption": "",
+									"description": "Introduction caste"
 								},
-								"1650516090": {
-									"id": null,
+								"2077786730": {
+									"id": 3426,
 									"type": "image",
 									"internal": true,
-									"source": "https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-subcaste.jpg"
+									"source": "https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-subcaste.jpg",
+									"title": "Introduction subcaste",
+									"caption": "",
+									"description": "Introduction subcaste"
 								}
 							});
 						}

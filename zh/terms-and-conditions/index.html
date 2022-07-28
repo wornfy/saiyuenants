@@ -1209,6 +1209,9 @@
 	<link rel="icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-192x192.png" sizes="192x192">
 	<link rel="apple-touch-icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-180x180.png">
 	<meta name="msapplication-TileImage" content="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-270x270.png">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/baseline/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/default/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/black/css/style.css">
 	<style id="wp-custom-css">
 		/*overall font, color & button setup*/
 
@@ -1295,7 +1298,7 @@
 		.has-drop-cap:not(:focus)::first-letter,
 		.wp-block-button.is-style-outline,
 		a {
-			color: #de2722;
+			color: #1d71b8;
 		}
 
 		.wp-block-button .wp-block-button__link {
@@ -1307,6 +1310,11 @@
 			background-color: white;
 			color: #032f3c;
 			text-decoration-line: none;
+		}
+
+		.broken_link,
+		a.broken_link {
+			text-decoration: inherit !important;
 		}
 
 
@@ -1396,6 +1404,8 @@
 		.entry-content #pcp_wrapper-780,
 		.entry-content #pcp_wrapper-3408 {
 			max-width: unset;
+			margin-top: 40px;
+			margin-bottom: 20px;
 		}
 
 		#pcp_wrapper-780 .swiper-slide h3.sp-pcp-title {
@@ -1455,9 +1465,16 @@
 
 		/*homepage layout*/
 
-		.entry-content .home-cover {
+		.entry-content .home-cover,
+		.entry-content .home-cover-top {
 			margin-top: 0px;
 			margin-bottom: 0px;
+		}
+
+		@media (min-width: 480px) {
+			.entry-content .home-cover-top {
+				min-height: 650px;
+			}
 		}
 
 		.entry-content .home-cover p {
@@ -1530,7 +1547,7 @@
 
 		@media (min-width: 480px) {
 			.entry-content .intro-group {
-				max-width: 70vw !important;
+				max-width: 75vw !important;
 			}
 		}
 
@@ -1538,10 +1555,11 @@
 			display: grid;
 			width: 50%;
 			flex-basis: initial !important;
-			max-width: 50rem;
+			max-width: 55rem;
 			align-items: center;
 			margin-left: auto;
 			margin-right: auto;
+			border: solid 1px;
 		}
 
 		.entry-content .intro-box .wp-block-group.intro-box-subhead {
@@ -1647,6 +1665,25 @@
 			margin-right: auto;
 		}
 
+		.entry-content .youtube-embed-group-outer {
+			max-width: unset !important;
+			margin-top: 20px;
+			margin-bottom: 0px;
+			background-color: #e7e6e6;
+			border-top: solid 1px;
+			border-bottom: solid 1px;
+		}
+
+		.entry-content .youtube-embed-group-inner {
+			max-width: 80rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p.youtube-embed-heading {
+			font-family: Abel, Helvetica, Arial, Verdana, Helvetica, sans-serif;
+		}
+
 
 
 
@@ -1738,6 +1775,16 @@
 			font-family: NonBreakingSpaceOverride, "Hoefler Text", "Noto Serif", Garamond, "Times New Roman", serif;
 		}
 
+		.sg-popup-builder-content .color-accent,
+		.sg-popup-builder-content .color-accent-hover:hover,
+		.sg-popup-builder-content .color-accent-hover:focus,
+		:root .sg-popup-builder-content .has-accent-color,
+		.sg-popup-builder-content .has-drop-cap:not(:focus)::first-letter,
+		.sg-popup-builder-content .wp-block-button.is-style-outline,
+		a {
+			color: #de2722;
+		}
+
 		@media screen and (prefers-reduced-motion: no-preference) {
 			.sgpb-content {
 				scroll-behavior: smooth;
@@ -1754,12 +1801,16 @@
 			color: #6d6d6d;
 			background-color: white;
 			position: absolute;
-			z-index: 999920;
+			z-index: 8000;
 			float: right;
 			bottom: 10px;
 			right: 35px;
 			padding: 5px;
 			margin: 0px;
+		}
+
+		.sgpb-floating-button {
+			z-index: 8000 !important;
 		}
 
 		@media (max-width: 479px) {
@@ -2105,12 +2156,12 @@
 								<li id="menu-item-2771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2771"><a
 										href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-many-many-roles-of-ants/">萬能的螞蟻</a></li>
 								<li id="menu-item-2772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772"><a
-										href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-illegal-immigrants-in-ants/">螞蟻中的偷渡客</a></li>
+										href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-undesired-ant-introductions/">螞蟻中的偷渡客</a></li>
 								<li id="menu-item-2773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2773"><a
 										href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/how-to-collect-ants/">如何採集螞蟻？</a></li>
 							</ul>
 						</li>
-						<li id="menu-item-2456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="https://wornfy.github.io/saiyuenants/zh/genus-overview/">螞蟻一覽</a></li>
+						<li id="menu-item-2456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="https://wornfy.github.io/saiyuenants/zh/ant-overview/">螞蟻一覽</a></li>
 						<li id="menu-item-1834" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1834">
 							<a href="#pll_switcher"><img
 									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAS1BMVEXqAADjAADZAAD2e3v0dXXzbGzyYWHxWFjyUlLuSkrQAAD5jY76m5zsPz/qNTXnKir56en6w8PmGxvKAAD5z9D6qqvjDw/32dnCAADqlhvuAAAAYElEQVR4AQXBUU6DUBRAwTm8SwqJ+9+m8cva0uBMgBBkkUiqYSWrkpeNxL6/76w5R/L1WZ9jXoONqvs5fWeyrGWux9i3Na5ji3Ftfv/uIZtG+8/78TxA7Skj4qxwcNrBPxiAEpMq30QZAAAAAElFTkSuQmCC"
@@ -2195,7 +2246,7 @@
 										<!-- .ancestor-wrapper -->
 									</li>
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772">
-										<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-illegal-immigrants-in-ants/">螞蟻中的偷渡客</a></div>
+										<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-undesired-ant-introductions/">螞蟻中的偷渡客</a></div>
 										<!-- .ancestor-wrapper -->
 									</li>
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2773">
@@ -2205,7 +2256,7 @@
 								</ul>
 							</li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456">
-								<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/genus-overview/">螞蟻一覽</a></div>
+								<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/ant-overview/">螞蟻一覽</a></div>
 								<!-- .ancestor-wrapper -->
 							</li>
 							<li class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1834">
@@ -2530,7 +2581,8 @@
 					2022 <a href="https://wornfy.github.io/saiyuenants/zh/home/">西園螞蟻</a>
 				</p>
 				<!-- .footer-copyright -->
-				<p class="privacy-policy"><a class="privacy-policy-link" href="https://wornfy.github.io/saiyuenants/zh/terms-and-conditions/">使用條款及細則</a></p>
+
+						<p class="privacy-policy"><a class="privacy-policy-link" href="https://wornfy.github.io/saiyuenants/zh/terms-and-conditions/">使用條款及細則</a></p>
 
 
 			</div>

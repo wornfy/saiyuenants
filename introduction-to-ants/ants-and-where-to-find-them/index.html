@@ -64,7 +64,7 @@
 	            "@id": "https://wornfy.github.io/saiyuenants/#website",
 	            "url": "https://wornfy.github.io/saiyuenants/",
 	            "name": "The Ants of Saiyuen",
-	            "description": "learn about ants&#039; ecology &amp; biodiversity",
+	            "description": "Learn about ants&#039; ecology &amp; biodiversity",
 	            "publisher": {
 	                "@id": "https://wornfy.github.io/saiyuenants/#organization"
 	            },
@@ -219,7 +219,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
 <script id="PopupBuilder.js-js-before">
 var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_1\/close.png","2":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_2\/close.png","3":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_3\/close.png","5":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_5\/close.png","6":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_6\/close.png"},"homePageUrl":"https:\/\/wornfy.github.io\/saiyuenants\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":"0"};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
-var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"b0b44dabcb"};
+var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"22461bc3bb"};
 </script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.1.12" id="PopupBuilder.js-js"></script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/themes/twentytwenty%20custom/assets/js/index.js?ver=2.0" id="twentytwenty-js-js" async></script>
@@ -240,6 +240,9 @@ var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-adm
 <link rel="icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-180x180.png">
 <meta name="msapplication-TileImage" content="https://wornfy.github.io/saiyuenants/wp-content/uploads/cropped-SY_logo_all-2-icon-270x270.png">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/baseline/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/default/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://wornfy.github.io/saiyuenants/wp-content/plugins/simple-lightbox/themes/black/css/style.css">
 		<style id="wp-custom-css">/*overall font, color & button setup*/
 
 body {
@@ -284,7 +287,7 @@ body:not(.overlay-header) .primary-menu ul {
 }
 
 .color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus)::first-letter, .wp-block-button.is-style-outline, a {
-  color: #de2722;
+  color: #1d71b8;
 }
 
 .wp-block-button .wp-block-button__link {
@@ -296,6 +299,10 @@ body:not(.overlay-header) .primary-menu ul {
 	background-color: white;
 	color: #032f3c;
 	text-decoration-line: none;
+}
+
+.broken_link, a.broken_link {
+	text-decoration: inherit !important;
 }
 
 
@@ -375,6 +382,8 @@ li.pll-parent-menu-item a {
 
 .entry-content #pcp_wrapper-780, .entry-content #pcp_wrapper-3408 {
 	max-width: unset;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 #pcp_wrapper-780 .swiper-slide h3.sp-pcp-title {
@@ -420,9 +429,15 @@ li.pll-parent-menu-item a {
 
 /*homepage layout*/
 
-.entry-content .home-cover {
+.entry-content .home-cover, .entry-content .home-cover-top {
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+@media (min-width: 480px) {
+	.entry-content .home-cover-top {
+		min-height: 650px;
+	}
 }
 
 .entry-content .home-cover p {
@@ -495,7 +510,7 @@ li.pll-parent-menu-item a {
 
 @media (min-width: 480px) {
 	.entry-content .intro-group {
-		max-width: 70vw !important;
+		max-width: 75vw !important;
 	}
 }
 
@@ -503,10 +518,11 @@ li.pll-parent-menu-item a {
 	display: grid;
 	width: 50%;
 	flex-basis: initial !important;
-	max-width: 50rem;
+	max-width: 55rem;
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+	border: solid 1px;
 }
 
 .entry-content .intro-box .wp-block-group.intro-box-subhead {
@@ -606,6 +622,25 @@ video {
 	margin-right: auto;
 }
 
+.entry-content .youtube-embed-group-outer {
+	max-width: unset !important;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	background-color: #e7e6e6;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+
+.entry-content .youtube-embed-group-inner {
+	max-width: 80rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.youtube-embed-heading {
+	font-family: Abel, Helvetica, Arial, Verdana, Helvetica, sans-serif;
+}
+
 
 
 
@@ -697,6 +732,10 @@ video {
 	font-family: NonBreakingSpaceOverride, "Hoefler Text", "Noto Serif", Garamond, "Times New Roman", serif;
 }
 
+.sg-popup-builder-content .color-accent, .sg-popup-builder-content .color-accent-hover:hover, .sg-popup-builder-content .color-accent-hover:focus, :root .sg-popup-builder-content .has-accent-color, .sg-popup-builder-content .has-drop-cap:not(:focus)::first-letter, .sg-popup-builder-content .wp-block-button.is-style-outline, a {
+  color: #de2722;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
 	.sgpb-content {
 		scroll-behavior: smooth;
@@ -713,12 +752,16 @@ video {
 	color: #6d6d6d;
 	background-color: white;
 	position: absolute;
-	z-index: 999920;
+	z-index: 8000;
 	float: right;
 	bottom: 10px;
 	right: 35px;
 	padding: 5px;
 	margin: 0px;
+}
+
+.sgpb-floating-button {
+	z-index: 8000 !important;
 }
 
 @media ( max-width: 479px ) {
@@ -913,7 +956,7 @@ a.to-the-top {
 					<div class="header-titles">
 
 						<div class="site-title faux-heading"><a href="https://wornfy.github.io/saiyuenants/">The Ants of Saiyuen</a></div>
-<div class="site-description">learn about ants&#039; ecology &amp; biodiversity</div>
+<div class="site-description">Learn about ants&#039; ecology &amp; biodiversity</div>
 <!-- .site-description -->
 					</div>
 <!-- .header-titles -->
@@ -944,11 +987,11 @@ a.to-the-top {
 	<li id="menu-item-1046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1046"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/what-is-ant/">What is ‘ant’?</a></li>
 	<li id="menu-item-1047" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-177 current_page_item menu-item-1047"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/ants-and-where-to-find-them/" aria-current="page">Ants and where to find them</a></li>
 	<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-many-many-roles-of-ants/">The many, many roles of ants</a></li>
-	<li id="menu-item-1043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-illegal-immigrants-in-ants/">The illegal immigrants in ants</a></li>
+	<li id="menu-item-1043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-undesired-ant-introductions/">The undesired ant introductions</a></li>
 	<li id="menu-item-1044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1044"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/how-to-collect-ants/">How to collect ants?</a></li>
 </ul>
 </li>
-<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="https://wornfy.github.io/saiyuenants/genus-overview/">Genus Overview</a></li>
+<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="https://wornfy.github.io/saiyuenants/ant-overview/">Ant Overview</a></li>
 <li id="menu-item-1838" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1838">
 <a href="#pll_switcher"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">English</span></a><span class="icon"></span>
 <ul class="sub-menu">
@@ -1016,7 +1059,7 @@ a.to-the-top {
 <!-- .ancestor-wrapper -->
 </li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043">
-<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-illegal-immigrants-in-ants/">The illegal immigrants in ants</a></div>
+<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/introduction-to-ants/the-undesired-ant-introductions/">The undesired ant introductions</a></div>
 <!-- .ancestor-wrapper -->
 </li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1044">
@@ -1026,7 +1069,7 @@ a.to-the-top {
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049">
-<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/genus-overview/">Genus Overview</a></div>
+<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/ant-overview/">Ant Overview</a></div>
 <!-- .ancestor-wrapper -->
 </li>
 <li class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1838">
@@ -1142,7 +1185,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-2 wp-block-gallery-1 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="640240232" data-slb-internal="0"><img loading="lazy" width="2000" height="1628" data-id="3425" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche.jpg" alt="Introduction niche" class="wp-image-3425" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-768x625.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-1536x1250.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2011935700" data-slb-internal="0"><img loading="lazy" width="2000" height="1628" data-id="3425" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche.jpg" alt="Introduction niche" class="wp-image-3425" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-768x625.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-1536x1250.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 <figcaption class="blocks-gallery-caption">Arboreal ant (<em>Gesomyrmex howardi</em>, top) and subterranean ant (<em>Prionopelta kraepelini</em>, bottom) under the same magnification. Notice <em>G. howardi</em> has a much bigger overall size and well-developed eyes, while <em>P. kraepelini</em> has greatly reduced eyes and a much flatter body.</figcaption></figure>
 
 
@@ -1160,7 +1203,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-4 wp-block-gallery-3 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="987118200" data-slb-internal="0"><img loading="lazy" width="1042" height="2000" data-id="3424" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example.jpg" alt="Introduction niche example" class="wp-image-3424" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example.jpg 1042w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example-400x768.jpg 400w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example-800x1536.jpg 800w" sizes="(max-width: 1042px) 100vw, 1042px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1005021607" data-slb-internal="0"><img loading="lazy" width="1042" height="2000" data-id="3424" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example.jpg" alt="Introduction niche example" class="wp-image-3424" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example.jpg 1042w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example-400x768.jpg 400w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-niche-example-800x1536.jpg 800w" sizes="(max-width: 1042px) 100vw, 1042px"></a></figure>
 <figcaption class="blocks-gallery-caption">Arboreal ant <em>Gesomyrmex howardi</em> (top) and hypogaeic ant <em>Strumigenys emmae</em> (bottom) under the same magnification. Notice <em>G. howardi</em> has well-developed eyes and triangular mandibles for hunting in daytime, while <em>S. emmae</em> has specialized elongated mandibles for hunting agile springtails.</figcaption></figure>
 
 
@@ -1178,29 +1221,29 @@ a.to-the-top {
 
 
 <figure class="wp-container-6 wp-block-gallery-5 wp-block-gallery alignfull has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2043951720" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3174" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest.jpg" alt="Habitat open forest" class="wp-image-3174" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="805222869" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3174" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest.jpg" alt="Habitat open forest" class="wp-image-3174" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-forest-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2146783652" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3172" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1.jpg" alt="Habitat leaf litter 1" class="wp-image-3172" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1688601639" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3172" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1.jpg" alt="Habitat leaf litter 1" class="wp-image-3172" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-1-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1366906218" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3173" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2.jpg" alt="Habitat leaf litter 2" class="wp-image-3173" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="876901853" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3173" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2.jpg" alt="Habitat leaf litter 2" class="wp-image-3173" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-leaf-litter-2-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 <figcaption class="blocks-gallery-caption">Open secondary forest in Saiyuen (first) and leaf litter on the forest floor (second and third).</figcaption></figure>
 
 
 
 <figure class="wp-container-8 wp-block-gallery-7 wp-block-gallery alignfull has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1048849469" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3168" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo.jpg" alt="Habitat bamboo" class="wp-image-3168" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="146227330" data-slb-internal="0"><img data-id="3168" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-bamboo.jpg" alt="Habitat bamboo" class="wp-image-3168"></a></figure>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="242560760" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3175" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1.jpg" alt="Habitat open habitat 1" class="wp-image-3175" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1355821094" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3175" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1.jpg" alt="Habitat open habitat 1" class="wp-image-3175" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-open-habitat-1-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="30762904" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3170" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm.jpg" alt="Habitat farm" class="wp-image-3170" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="177807542" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3170" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm.jpg" alt="Habitat farm" class="wp-image-3170" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-farm-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 <figcaption class="blocks-gallery-caption">Other habitats in Saiyuen: patches of bamboo (first), grassland (second) and farmland (third).</figcaption></figure>
 
 
@@ -2061,7 +2104,7 @@ var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/wornfy.github.io\/saiyuenants
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
 	<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":false,"slideshow_autostart":false,"slideshow_duration":"6","group_loop":false,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_black","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"%current% \/ %total%"}}); }
-if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"640240232":{"id":null,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-niche.jpg"},"987118200":{"id":null,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-niche-example.jpg"},"2043951720":{"id":3174,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-open-forest.jpg","title":"Habitat open forest","caption":"","description":"Habitat open forest"},"2146783652":{"id":3172,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-leaf-litter-1.jpg","title":"Habitat leaf litter 1","caption":"","description":"Habitat leaf litter 1"},"1366906218":{"id":3173,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-leaf-litter-2.jpg","title":"Habitat leaf litter 2","caption":"","description":"Habitat leaf litter 2"},"1048849469":{"id":3168,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-bamboo.jpg","title":"Habitat bamboo","caption":"","description":"Habitat bamboo"},"242560760":{"id":3175,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-open-habitat-1.jpg","title":"Habitat open habitat 1","caption":"","description":"Habitat open habitat 1"},"30762904":{"id":3170,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-farm.jpg","title":"Habitat farm","caption":"","description":"Habitat farm"}});} }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"2011935700":{"id":3425,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-niche.jpg","title":"Introduction niche","caption":"","description":"Introduction niche"},"1005021607":{"id":3424,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-niche-example.jpg","title":"Introduction niche example","caption":"","description":"Introduction niche example"},"805222869":{"id":3174,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-open-forest.jpg","title":"Habitat open forest","caption":"","description":"Habitat open forest"},"1688601639":{"id":3172,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-leaf-litter-1.jpg","title":"Habitat leaf litter 1","caption":"","description":"Habitat leaf litter 1"},"876901853":{"id":3173,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-leaf-litter-2.jpg","title":"Habitat leaf litter 2","caption":"","description":"Habitat leaf litter 2"},"146227330":{"id":3920,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-bamboo.jpg","title":"Habitat bamboo","caption":"","description":"Habitat bamboo"},"1355821094":{"id":3175,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-open-habitat-1.jpg","title":"Habitat open habitat 1","caption":"","description":"Habitat open habitat 1"},"177807542":{"id":3170,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Habitat-farm.jpg","title":"Habitat farm","caption":"","description":"Habitat farm"}});} }
 /* THM */
 if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"Baseline","parent":"","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"Default (Light)","parent":"slb_baseline","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_black',{"name":"Default (Dark)","parent":"slb_default","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/black\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
 <script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
