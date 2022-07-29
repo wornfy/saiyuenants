@@ -2438,22 +2438,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wornfy.github.io/saiyuenants/zh/ant-overview/tetramorium/tetramorium-sp-1bg-obesum-group/</loc>
-		<lastmod>2022-07-22T11:06:33+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Full-face-view-35-Tetramorium-sp-1BG.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Background-closeup.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-00-common.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-35-Tetramorium-sp.-1BG-obesum-group.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wornfy.github.io/saiyuenants/zh/ant-overview/brachyponera/</loc>
 		<lastmod>2022-07-22T11:06:37+00:00</lastmod>
 		<image:image>
@@ -3128,6 +3112,22 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Habitat-disturbed.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wornfy.github.io/saiyuenants/zh/ant-overview/tetramorium/tetramorium-sp-1bg-obesum-group/</loc>
+		<lastmod>2022-07-28T14:03:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Full-face-view-35-Tetramorium-sp-1BG.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Background-closeup.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-00-common.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-35-Tetramorium-sp.-1BG-obesum-group.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
