@@ -24,7 +24,7 @@
 	<meta property="og:url" content="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-ant/">
 	<meta property="og:site_name" content="西園螞蟻">
 	<meta property="article:publisher" content="https://www.facebook.com/saiyuenfarm/">
-	<meta property="article:modified_time" content="2022-07-21T17:16:57+00:00">
+	<meta property="article:modified_time" content="2022-07-29T13:15:42+00:00">
 	<meta property="og:image" content="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg">
 	<meta property="og:image:width" content="2000">
 	<meta property="og:image:height" content="1333">
@@ -106,7 +106,7 @@
 	            },
 	            "thumbnailUrl": "https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg",
 	            "datePublished": "2022-06-23T11:23:33+00:00",
-	            "dateModified": "2022-07-21T17:16:57+00:00",
+	            "dateModified": "2022-07-29T13:15:42+00:00",
 	            "description": "螞蟻生態的基本簡介：什麼才算「螞蟻」？「蟻群」是什麼？和「蟻巢」的差別在哪裡？為什麼螞蟻能夠如此成功，無處不在？",
 	            "breadcrumb": {
 	                "@id": "https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-ant/#breadcrumb"
@@ -152,11 +152,11 @@
 	            },
 	            "headline": "何為「螞蟻」？",
 	            "datePublished": "2022-06-23T11:23:33+00:00",
-	            "dateModified": "2022-07-21T17:16:57+00:00",
+	            "dateModified": "2022-07-29T13:15:42+00:00",
 	            "mainEntityOfPage": {
 	                "@id": "https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-ant/"
 	            },
-	            "wordCount": 44,
+	            "wordCount": 45,
 	            "publisher": {
 	                "@id": "https://wornfy.github.io/saiyuenants/zh/home/#organization"
 	            },
@@ -220,7 +220,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
 <script id="PopupBuilder.js-js-before">
 var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_1\/close.png","2":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_2\/close.png","3":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_3\/close.png","5":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_5\/close.png","6":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_6\/close.png"},"homePageUrl":"https:\/\/wornfy.github.io\/saiyuenants\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":"0"};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
-var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"55cab23fd3"};
+var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"1c15376969"};
 </script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.1.12" id="PopupBuilder.js-js"></script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/themes/twentytwenty%20custom/assets/js/index.js?ver=2.0" id="twentytwenty-js-js" async></script>
@@ -613,6 +613,15 @@ figcaption {
 	font-weight: 400;
 }
 
+.tag-taxa-en figcaption, 
+.tag-taxalist-zh figcaption {
+	min-height: 50.2px;
+}
+
+.tag-taxa-zh figcaption {
+	min-height: 65.8px;
+}
+
 .alignfull > figcaption, .alignfull > .wp-caption-text {
 	max-width: 80rem;
 }
@@ -642,7 +651,7 @@ p.youtube-embed-heading {
 	font-family: Abel, Helvetica, Arial, Verdana, Helvetica, sans-serif;
 }
 
-#slb_viewer_wrap .slb_theme_slb_default div.slb_data_desc {
+#slb_viewer_wrap .slb_theme_slb_default div.slb_data_desc, #slb_viewer_wrap .slb_theme_slb_black div.slb_data_desc {
 	display: none;
 }
 
@@ -777,6 +786,48 @@ p.youtube-embed-heading {
 
 .popup-figure-long {
 	max-width: 60rem;
+}
+
+
+
+
+
+/*breadcrumbs*/
+
+.home #breadcrumbs {
+	display: none;
+}
+
+.footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer {
+	margin-top: 0;
+}
+
+@media (min-width: 700px) {
+	#breadcrumbs {
+		margin-top: 8rem;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	#breadcrumbs {
+		margin-top: 3rem;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	p#breadcrumbs {
+		font-size: 1.5rem;
+	}
+}
+
+p#breadcrumbs {
+	margin-bottom: 5px;
+}
+
+.breadcrumb_last {
+  white-space: nowrap;
 }
 
 
@@ -1182,7 +1233,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-2 wp-block-gallery-1 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1844372295" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3165" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" alt="Ant closeup 2" class="wp-image-3165" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="929077721" data-slb-internal="0"><img loading="lazy" width="2000" height="1333" data-id="3165" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg" alt="Ant closeup 2" class="wp-image-3165" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-768x512.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Ant-closeup-2-1536x1024.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 <figcaption class="blocks-gallery-caption">竹樹上的巨山蟻屬／弓背蟻屬（<em>Camponotus</em> sp.）工蟻，攝於西園。</figcaption></figure>
 
 
@@ -1191,7 +1242,7 @@ a.to-the-top {
 
 
 
-<p>螞蟻已經征服了除了南極洲外的所有大陸。我們能在各種<strong>棲息地</strong>發現它們，從最乾旱的沙漠到潮濕的熱帶雨林，從大草原到家居之中，從數百米深的洞穴到4,000米高的山峰。螞蟻亦佔據了各種各樣的微棲地（在生態學上也稱為<strong>生態位</strong> niches）。有些螞蟻能在地下7米深處築巢，而其他則生活在地面上的腐木中、岩石下、在樹冠之上的空心樹枝或者由樹葉或紙漿構成的複雜巢穴中。</p>
+<p>螞蟻已經征服了除了南極洲外的所有大陸。我們能在各種<strong>棲息地</strong>發現它們，從最乾旱的沙漠到潮濕的熱帶雨林，從大草原到家居之中，從數百米深的洞穴到4,000米高的山峰。螞蟻亦佔據了各種各樣的微棲地（microhabitats；在生態學上也稱為<strong>生態位</strong> niches）。有些螞蟻能在地下7米深處築巢，而其他則生活在地面上的腐木中、岩石下、在樹冠之上的空心樹枝或者由樹葉或紙漿構成的複雜巢穴中。</p>
 
 
 
@@ -1220,7 +1271,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-4 wp-block-gallery-3 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1893005261" data-slb-internal="0"><img data-id="3195" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" alt="Introduction-caste" class="wp-image-3195"></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="122061474" data-slb-internal="0"><img data-id="3195" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-caste.jpg" alt="Introduction-caste" class="wp-image-3195"></a></figure>
 <figcaption class="blocks-gallery-caption">同一螞蟻品種（密毛瘤顎家蟻／密毛瘤顎蟻 <em>Strumigenys hirsuta</em>）的脫翅蟻后（dealate queen，上圖）和工蟻（下圖）比較，放大倍率相同<em>（並非於西園採集）</em>。蟻后體型相對較大，複眼明顯更大，中軀較粗壯（有飛行用的肌肉）。</figcaption></figure>
 
 
@@ -1229,7 +1280,7 @@ a.to-the-top {
 
 
 
-<p>如前面所述，蟻群中存在著分工。螞蟻的不同角色（稱為<strong>階級 </strong>castes）在成年前便已經預先確定。螞蟻中有三個常見的階級：<span style="text-decoration: underline;">雄蟻</span>（male）、<u>蟻后</u>（queen）和<span style="text-decoration: underline;">工蟻</span>（或職蟻；worker）。雄蟻通常壽命很短，在交配後不久就會死亡（很多品種的雄蟻甚至沒有已發育完成、能夠進食的嘴部）。它們從未受精的卵中孵化出來，只在一年中的特定時期出現（被稱為繁殖期或婚飛期，swarm / nuptial season）。而從受精卵孵化出來的雌蟻的壽命通常要長得多（工蟻可能是幾年，蟻后則長達幾十年）。蟻后負責產卵，而工蟻則負責其他工作：照顧未成熟個體、覓食、建造、維護和保衛巢穴。蟻后和雄蟻通常都是有翅（alate），讓它們就可以飛離蟻巢交配，並由蟻后建立新蟻群（但某些品種的蟻后或雄蟻天生便沒有翅膀，稱為<strong>擬工蟻</strong>蟻后 ergatoid queens或擬工蟻雄蟻 ergatoid male）。「蟻后」這個詞可能有點誤導成份，容易讓大家聯想到在人類社會中有統治權力的皇室。然而在螞蟻中，蟻后並不管理蟻群。螞蟻社會實際上是去中心化而非中央集權，每個個體都以各自為蟻群作出貢獻。當然，這並不意味著蟻群之中沒有衝突，或者不會集體犯錯（完全相反）。</p>
+<p>如前面所述，蟻群中存在著分工。螞蟻的不同角色（稱為<strong>階級 </strong>castes）在成年前便已經預先確定。螞蟻中有三個常見的階級：<span style="text-decoration: underline;">雄蟻</span>（male）、<u>蟻后</u>（queen）和<span style="text-decoration: underline;">工蟻</span>（或職蟻；worker）。雄蟻通常壽命很短，在交配後不久就會死亡（很多品種的雄蟻甚至沒有已發育完成、能夠進食的嘴部）。它們從未受精的卵中孵化出來，只在一年中的特定時期出現（被稱為繁殖期或婚飛期，swarm / nuptial season）。而從受精卵孵化出來的雌蟻的壽命通常要長得多（工蟻可能是幾年，蟻后則長達幾十年）。蟻后負責產卵，而工蟻則負責其他工作：照顧未成熟個體、覓食、建造、維護和保衛巢穴。蟻后和雄蟻通常都是有翅（alate），讓它們就可以飛離蟻巢交配，並由蟻后建立新蟻群（但某些品種的蟻后或雄蟻天生便沒有翅膀，稱為<strong>擬工蟻</strong>蟻后 ergatoid queens或擬工蟻雄蟻 ergatoid male）。「蟻后」這個詞可能有點誤導成份，容易讓大家聯想到在人類社會中有統治權力的王室。然而在螞蟻中，蟻后並不管理蟻群。螞蟻社會實際上是去中心化而非中央集權，每個個體都以各自為蟻群作出貢獻。當然，這並不意味著蟻群之中沒有衝突，或者不會集體犯錯（完全相反）。</p>
 
 
 
@@ -1238,7 +1289,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-6 wp-block-gallery-5 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="964241782" data-slb-internal="0"><img data-id="3218" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" alt="Introduction-subcaste" class="wp-image-3218"></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="654668952" data-slb-internal="0"><img data-id="3218" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Introduction-subcaste.jpg" alt="Introduction-subcaste" class="wp-image-3218"></a></figure>
 <figcaption class="blocks-gallery-caption">同一螞蟻品種（上海大頭家蟻／上海大頭蟻 <em>Pheidole zoceana</em>）的大工蟻（上圖）和小工蟻（下圖）比較，放大倍率相同。大工蟻體型較大，頭部更強壯。<br><br>要注意大工蟻和小工蟻的體型差異視乎螞蟻品種，並不一定如此極端。</figcaption></figure>
 
 
@@ -1247,7 +1298,7 @@ a.to-the-top {
 
 
 
-<p>在某些螞蟻品種中，蟻群中的階級可以根據形態差異和工作分工，進一步細分為不同<strong>亞階級</strong>（subcastes）。當工蟻能細分為不同亞階級，我們稱這些品種為<strong>多態型</strong>（polymorphic；與<strong>單態型</strong> monomorphic螞蟻相對）。多態型螞蟻的工蟻通常可以被細分為<em>小工蟻</em>（<em>minor workers</em>）和<em>大工蟻</em>（<em>major workers</em>；如果不止兩個亞階級的話，則是<em>小工蟻</em>、<em>中工蟻</em>、<em>大工蟻</em>、<em>特大工蟻</em>等等）。大工蟻（或兵蟻）通常尺寸更大，有更強的<strong>大顎</strong>（mandibles）。它們負責保衛巢穴，並在巢穴附近執行較為繁重的工作（例如將大塊的食物帶回蟻群，切割大塊的食物，甚至研磨種子）。另一方面，小工蟻則專注於建造巢穴、照顧未成熟個體和在離蟻巢相對較遠的地方覓食。雖然工蟻通常都沒有生殖能力，但如果它們有完整的卵巢，則能夠產下非受精卵。這些非受精卵（或稱<strong>營養卵</strong> trophic eggs）可以作為蟻后和幼蟲的食物來源。當蟻群失去蟻后後，工蟻產下的非受精卵亦會孵化成雄蟻。在極少數品種中，被稱為<strong>生殖工蟻</strong>（gamergates）的工蟻亦會與雄蟻交配並負責繁殖（甚至完全取代蟻后）。</p>
+<p>在某些螞蟻品種中，蟻群中的階級可以根據形態差異和工作分工，進一步細分為不同<strong>亞階級</strong>（subcastes）。當工蟻能細分為不同亞階級，我們稱這些品種為<strong>多態型</strong>（polymorphic；與<strong>單態型</strong> monomorphic 螞蟻相對）。多態型螞蟻的工蟻通常可以被細分為<em>小工蟻</em>（<em>minor workers</em>）和<em>大工蟻</em>（<em>major workers</em>；如果不止兩個亞階級的話，則是<em>小工蟻</em>、<em>中工蟻</em>、<em>大工蟻</em>、<em>特大工蟻</em>等等）。大工蟻（或兵蟻）通常尺寸更大，有更強的<strong>大顎</strong>（mandibles）。它們負責保衛巢穴，並在巢穴附近執行較為繁重的工作（例如將大塊的食物帶回蟻群，切割大塊的食物，甚至研磨種子）。另一方面，小工蟻則專注於建造巢穴、照顧未成熟個體和在離蟻巢相對較遠的地方覓食。雖然工蟻通常都沒有生殖能力，但如果它們有完整的卵巢，則能夠產下非受精卵。這些非受精卵（或稱<strong>營養卵</strong> trophic eggs）可以作為蟻后和幼蟲的食物來源。當蟻群失去蟻后後，工蟻產下的非受精卵亦會孵化成雄蟻。在極少數品種中，被稱為<strong>生殖工蟻</strong>（gamergates）的工蟻亦會與雄蟻交配並負責繁殖（甚至完全取代蟻后）。</p>
 
 
 
@@ -1305,6 +1356,8 @@ a.to-the-top {
 <!-- .section-inner -->
 
 	
+
+<p id="breadcrumbs"><span><span><a href="https://wornfy.github.io/saiyuenants/zh/home/">主頁</a> » <span><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/">螞蟻入門</a> » <span class="breadcrumb_last" aria-current="page">何為「螞蟻」？</span></span></span></span></p>
 </article><!-- .post -->
 
 </main><!-- #site-content -->
@@ -1331,7 +1384,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-11 wp-block-gallery-10 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-full footer-sy-logo"><a href="https://www.saiyuen.com/" target="_blank" rel=" noreferrer noopener"><img loading="lazy" width="2000" height="534" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg" alt="SY_logo_all" class="wp-image-3267" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-768x205.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-1536x410.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-full footer-sy-logo"><a href="https://www.saiyuen.com/en" target="_blank" rel=" noreferrer noopener"><img loading="lazy" width="2000" height="534" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg" alt="SY_logo_all" class="wp-image-3267" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-768x205.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-1536x410.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 </figure>
 </div>
 
@@ -2073,7 +2126,7 @@ var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/wornfy.github.io\/saiyuenants
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
 	<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":false,"slideshow_autostart":false,"slideshow_duration":"6","group_loop":true,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_black","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"%current% \/ %total%"}}); }
-if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"1844372295":{"id":3165,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Ant-closeup-2.jpg"},"1893005261":{"id":3423,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-caste.jpg"},"964241782":{"id":3426,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-subcaste.jpg"}});} }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"929077721":{"id":3165,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Ant-closeup-2.jpg"},"122061474":{"id":3423,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-caste.jpg"},"654668952":{"id":3426,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Introduction-subcaste.jpg"}});} }
 /* THM */
 if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"Baseline","parent":"","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"Default (Light)","parent":"slb_baseline","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_black',{"name":"Default (Dark)","parent":"slb_default","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/black\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
 <script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>

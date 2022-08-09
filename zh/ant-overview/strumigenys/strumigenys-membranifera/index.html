@@ -226,7 +226,7 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
 <script id="PopupBuilder.js-js-before">
 var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_1\/close.png","2":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_2\/close.png","3":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_3\/close.png","5":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_5\/close.png","6":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/popup-builder\/public\/img\/theme_6\/close.png"},"homePageUrl":"https:\/\/wornfy.github.io\/saiyuenants\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":"0"};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
-var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"55cab23fd3"};
+var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wornfy.github.io\/saiyuenants\/wp-admin\/admin-ajax.php","nonce":"bfbe4d9231"};
 </script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.1.12" id="PopupBuilder.js-js"></script>
 <script src="https://wornfy.github.io/saiyuenants/wp-content/themes/twentytwenty%20custom/assets/js/index.js?ver=2.0" id="twentytwenty-js-js" async></script>
@@ -619,6 +619,15 @@ figcaption {
 	font-weight: 400;
 }
 
+.tag-taxa-en figcaption, 
+.tag-taxalist-zh figcaption {
+	min-height: 50.2px;
+}
+
+.tag-taxa-zh figcaption {
+	min-height: 65.8px;
+}
+
 .alignfull > figcaption, .alignfull > .wp-caption-text {
 	max-width: 80rem;
 }
@@ -648,7 +657,7 @@ p.youtube-embed-heading {
 	font-family: Abel, Helvetica, Arial, Verdana, Helvetica, sans-serif;
 }
 
-#slb_viewer_wrap .slb_theme_slb_default div.slb_data_desc {
+#slb_viewer_wrap .slb_theme_slb_default div.slb_data_desc, #slb_viewer_wrap .slb_theme_slb_black div.slb_data_desc {
 	display: none;
 }
 
@@ -783,6 +792,48 @@ p.youtube-embed-heading {
 
 .popup-figure-long {
 	max-width: 60rem;
+}
+
+
+
+
+
+/*breadcrumbs*/
+
+.home #breadcrumbs {
+	display: none;
+}
+
+.footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer {
+	margin-top: 0;
+}
+
+@media (min-width: 700px) {
+	#breadcrumbs {
+		margin-top: 8rem;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	#breadcrumbs {
+		margin-top: 3rem;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	p#breadcrumbs {
+		font-size: 1.5rem;
+	}
+}
+
+p#breadcrumbs {
+	margin-bottom: 5px;
+}
+
+.breadcrumb_last {
+  white-space: nowrap;
 }
 
 
@@ -995,7 +1046,7 @@ a.to-the-top {
 <li id="menu-item-1832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1832">
 <a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/">螞蟻入門</a><span class="icon"></span>
 <ul class="sub-menu">
-	<li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1833"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-ant/">何為「螞蟻」？</a></li>
+	<li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1833"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-an-ant/">何為「螞蟻」？</a></li>
 	<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/ants-and-where-to-find-them/">螞蟻與它們的產地</a></li>
 	<li id="menu-item-2771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2771"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-many-many-roles-of-ants/">萬能的螞蟻</a></li>
 	<li id="menu-item-2772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/the-undesired-ant-introductions/">螞蟻中的偷渡客</a></li>
@@ -1058,7 +1109,7 @@ a.to-the-top {
 <!-- .ancestor-wrapper -->
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1833">
-<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-ant/">何為「螞蟻」？</a></div>
+<div class="ancestor-wrapper"><a href="https://wornfy.github.io/saiyuenants/zh/introduction-to-ants/what-is-an-ant/">何為「螞蟻」？</a></div>
 <!-- .ancestor-wrapper -->
 </li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770">
@@ -1339,7 +1390,7 @@ a.to-the-top {
 
 <div class="wp-container-45 wp-block-column is-vertically-aligned-center" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;flex-basis:50%">
 <figure class="wp-container-44 wp-block-gallery-43 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera.png" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1638091629" data-slb-internal="0"><img loading="lazy" width="1310" height="847" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera.png" alt="Species distribution map 30 Strumigenys membranifera" class="wp-image-1521" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera.png 1310w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera-768x497.png 768w" sizes="(max-width: 1310px) 100vw, 1310px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera.png" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1248067780" data-slb-internal="0"><img loading="lazy" width="1310" height="847" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera.png" alt="Species distribution map 30 Strumigenys membranifera" class="wp-image-1521" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera.png 1310w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-distribution-map-30-Strumigenys-membranifera-768x497.png 768w" sizes="(max-width: 1310px) 100vw, 1310px"></a></figure>
 </figure>
 </div>
 </div>
@@ -1392,7 +1443,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-49 wp-block-gallery-48 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="1110023749" data-slb-internal="0"><img loading="lazy" width="2000" height="1374" data-id="2936" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera.jpg" alt="Species figure CHI 30 Strumigenys membranifera" class="wp-image-2936" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera-768x528.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera-1536x1055.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera.jpg" target="_blank" rel="noopener" data-slb-active="1" data-slb-asset="2000975796" data-slb-internal="0"><img loading="lazy" width="2000" height="1374" data-id="2936" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera.jpg" alt="Species figure CHI 30 Strumigenys membranifera" class="wp-image-2936" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera-768x528.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/Species-figure-CHI-30-Strumigenys-membranifera-1536x1055.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 </figure>
 
 
@@ -1441,6 +1492,8 @@ a.to-the-top {
 <!-- .section-inner -->
 
 	
+
+<p id="breadcrumbs"><span><span><a href="https://wornfy.github.io/saiyuenants/zh/home/">主頁</a> » <span><a href="https://wornfy.github.io/saiyuenants/zh/ant-overview/">螞蟻一覽</a> » <span><a href="https://wornfy.github.io/saiyuenants/zh/ant-overview/strumigenys/">瘤顎家蟻屬</a> » <span class="breadcrumb_last" aria-current="page">節膜瘤顎家蟻</span></span></span></span></span></p>
 </article><!-- .post -->
 
 </main><!-- #site-content -->
@@ -1467,7 +1520,7 @@ a.to-the-top {
 
 
 <figure class="wp-container-56 wp-block-gallery-55 wp-block-gallery has-nested-images columns-default is-cropped">
-<figure class="wp-block-image size-full footer-sy-logo"><a href="https://www.saiyuen.com/" target="_blank" rel=" noreferrer noopener"><img loading="lazy" width="2000" height="534" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg" alt="SY_logo_all" class="wp-image-3267" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-768x205.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-1536x410.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
+<figure class="wp-block-image size-full footer-sy-logo"><a href="https://www.saiyuen.com/en" target="_blank" rel=" noreferrer noopener"><img loading="lazy" width="2000" height="534" src="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg" alt="SY_logo_all" class="wp-image-3267" srcset="https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended.jpg 2000w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-768x205.jpg 768w, https://wornfy.github.io/saiyuenants/wp-content/uploads/SY_logo_all-1-extended-1536x410.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"></a></figure>
 </figure>
 </div>
 
@@ -2442,7 +2495,7 @@ var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/wornfy.github.io\/saiyuenants
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
 	<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":false,"slideshow_autostart":false,"slideshow_duration":"6","group_loop":true,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_black","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"%current% \/ %total%"}}); }
-if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"1638091629":{"id":1521,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Species-distribution-map-30-Strumigenys-membranifera.png"},"1110023749":{"id":2936,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Species-figure-CHI-30-Strumigenys-membranifera.jpg","title":"Species figure CHI 30 Strumigenys membranifera","caption":"","description":"Species figure CHI 30 Strumigenys membranifera"}});} }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"1248067780":{"id":1521,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Species-distribution-map-30-Strumigenys-membranifera.png"},"2000975796":{"id":2936,"type":"image","internal":true,"source":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/uploads\/Species-figure-CHI-30-Strumigenys-membranifera.jpg","title":"Species figure CHI 30 Strumigenys membranifera","caption":"","description":"Species figure CHI 30 Strumigenys membranifera"}});} }
 /* THM */
 if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"Baseline","parent":"","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"Default (Light)","parent":"slb_baseline","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_black',{"name":"Default (Dark)","parent":"slb_default","styles":[{"handle":"base","uri":"https:\/\/wornfy.github.io\/saiyuenants\/wp-content\/plugins\/simple-lightbox\/themes\/black\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
 <script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
